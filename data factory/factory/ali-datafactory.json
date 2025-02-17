@@ -1,0 +1,9 @@
+{
+	"name": "ali-datafactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "9fef9ed5-6348-460e-bad5-77b729560d37",
+		"tenantId": "a2e466aa-4f86-4545-b5b8-97da7c8febf3"
+	}
+}

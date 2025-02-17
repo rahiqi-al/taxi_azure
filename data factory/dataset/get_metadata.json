@@ -1,0 +1,18 @@
+{
+	"name": "get_metadata",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ingestion_source_blob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "data"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
