@@ -1,0 +1,12 @@
+{
+	"name": "AzureSynapseArtifacts",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSynapseArtifacts",
+		"typeProperties": {
+			"endpoint": "https://alisynapses.dev.azuresynapse.net",
+			"authentication": "MSI",
+			"workspaceResourceId": "/subscriptions/59b3f2eb-caba-469e-afca-cde678d49c24/resourceGroups/arahiqi/providers/Microsoft.Synapse/workspaces/alisynapses"
+		}
+	}
+}
