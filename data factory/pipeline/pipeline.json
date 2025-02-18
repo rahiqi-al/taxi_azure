@@ -5,6 +5,8 @@
 			{
 				"name": "Get Metadata of source",
 				"type": "GetMetadata",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
@@ -35,6 +37,8 @@
 			{
 				"name": "ForEach",
 				"type": "ForEach",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "Get Metadata of source",
@@ -116,6 +120,42 @@
 							]
 						}
 					]
+				}
+			},
+			{
+				"name": "Notebook1",
+				"type": "SynapseNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebook": {
+						"referenceName": {
+							"value": "transformation",
+							"type": "Expression"
+						},
+						"type": "NotebookReference"
+					},
+					"snapshot": true,
+					"sparkPool": {
+						"referenceName": {
+							"value": "sparkpool",
+							"type": "Expression"
+						},
+						"type": "BigDataPoolReference"
+					},
+					"executorSize": "Small",
+					"driverSize": "Small"
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureSynapseArtifacts",
+					"type": "LinkedServiceReference"
 				}
 			}
 		],
