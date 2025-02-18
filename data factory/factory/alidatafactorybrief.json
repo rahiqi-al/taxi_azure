@@ -1,0 +1,9 @@
+{
+	"name": "alidatafactorybrief",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "144e87a3-31c8-4d9b-89bd-4c123fb16817",
+		"tenantId": "a2e466aa-4f86-4545-b5b8-97da7c8febf3"
+	}
+}
