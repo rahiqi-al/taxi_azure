@@ -6,6 +6,8 @@ Ce projet met en œuvre un pipeline de données complet pour l'extraction, la tr
 ## Technologies Utilisées
 - **Azure Data Factory** : Orchestration des flux de données.
 - **Azure Synapse Analytics** : Stockage et transformation des données.
+- **Azure Data Lake** : Stockage des données à grande échelle.
+- **Azure Key Vault** : Gestion sécurisée des secrets et des identifiants.
 - **Power BI** : Visualisation et analyse des données.
 
 ## Objectif Général
